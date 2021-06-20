@@ -1,2 +1,2 @@
 # Python-Snippets
-Usefull Python programs.
+Useful Python programs.
