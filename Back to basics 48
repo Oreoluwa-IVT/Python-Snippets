@@ -1,1 +1,16 @@
 # How to use a constructor
+#Demonstrates constructors
+
+class Critter(object):
+    """A virtual pet"""
+    def __init__(self):
+        print("A new critter has been born!")
+    def talk(self):
+        print("The constructor is defined in the program")
+
+
+# main 
+nownow=Critter()
+nowto=Critter()
+nownow.talk()
+nowto.talk()
