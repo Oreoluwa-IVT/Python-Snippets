@@ -12,3 +12,4 @@ now=pickle.load(f)
 
 print("\n\n\nYou have successfully pickles and loaded this: ",end="")
 print(now)
+f.close()
