@@ -9,7 +9,7 @@ class Critter(object):
         print("A new critter has been born!")
         self.name=name
 
-    def __str__(self):
+    def __str__(self): # this part of the program is printed when you try to print an object
         rep="Critter object \n"
         rep+="name:"+ self.name + "\n"
         return rep
