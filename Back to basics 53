@@ -30,3 +30,4 @@ class now(object):
 crit=now() # crit object was instantiated here
 print(crit._now__private("Oreoluwa \n\n")) # are accessing the private method " __private()"
 print(crit.newmethod())
+
