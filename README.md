@@ -1,7 +1,5 @@
 # Python-Snippets
-Useful Python programs. Happy Cloning!
-:+1: :sparkles: :camel: :tada: 
-:rocket: :metal: :octocat: 
+Useful Python programs. 
 
 ## See How to Write in Python, With Examples Written in The "Back to basics 1-50" Files.
 1. Conditional Statements
@@ -20,3 +18,10 @@ Useful Python programs. Happy Cloning!
 14. Accessing Private Methods
 15. Modifiying Attributes
 16. Using Static Methods | Properties
+
+
+Happy Cloning!
+:+1: :sparkles: :camel: :tada: 
+:rocket: :metal: :octocat: 
+
+###Oluwafemi Oreoluwa
