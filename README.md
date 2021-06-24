@@ -1,5 +1,7 @@
 # Python-Snippets
-Useful Python programs.
+Useful Python programs. Happy Cloning!
+:+1: :sparkles: :camel: :tada: 
+:rocket: :metal: :octocat: 
 
 ## See How to Write in Python, With Examples Written in The "Back to basics 1-50" Files.
 1. Conditional Statements
