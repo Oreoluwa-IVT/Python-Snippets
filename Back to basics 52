@@ -12,12 +12,6 @@ class Critter(object):
         print("\nI'm,",self.name)
         print("\nI'm",self.__mood)
 
-    
-class __nownow(object):
-    """This is a private class"""
-    def okay(self):
-        print("I'm a private class")
-
 
 crit=Critter(name="Oreoluwa",mood="happy") 
 
@@ -31,6 +25,13 @@ except:
     print("\n\nNice Try. you can't access a private attribute")
 
 input("\n\n\n\n\nPress the Enter key to exit")
+
+
+
+# But here's the fun part , you can actually access a private attribute. But you'd have to pull a few strings to do that
+
+print(crit._Critter__mood)
+
 
 
     
