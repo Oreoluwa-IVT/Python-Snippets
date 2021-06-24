@@ -6,12 +6,13 @@
 class Critter(object):
     """A new class uhmm"""
     def __init__(self,name):
-        print("Welcome to the divine access")
+        print("Welcome to the divine access",name)
         self.__name=name
     
     @property
     def name(self):
-        return self.__name=name # this property is simply placed here to allow indirect access to the attribute "main"
+        return self.__name
+        # this property is simply placed here to allow indirect access to the attribute "main"
     
     @name.setter # this is calle a decorator
     def name(self,new_name):
@@ -19,6 +20,20 @@ class Critter(object):
             print("A Critter's name can't be the empty string")
 
         else:
-            self.__name = new_name
-            print("Changed my dear")
+            self.__name = new_name  #----------------------- >|
+            print("Changed my dear")   #                      |
+                                       #                      |
+                                    #                         |
+                                    #                         |
+                                     #                        | 
+                                     #                        |
+#main                                                         |
+new=Critter("Oreoluwa")              #                        |
+print(new.name)                       #                       |
+new.name="Randolph" # you this is how you change an attribute |
+print(new.name)
+
+input("\n\nPress the Enter key to exit")
+
+
 
