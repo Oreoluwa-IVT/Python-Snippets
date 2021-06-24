@@ -5,11 +5,11 @@ Useful Python programs.
 1. Conditional Statements
 2. Operators
 3. List
-4. Tuples
-5. Dictionaries
+4. Tuple
+5. Dictionary
 6. Shelve
-7. Pickles
-8. Try | Catch Execeptions
+7. Pickle
+8. Try | Catch Exceptions
 9. Creating | Reading | Writing txt files
 10. Creating functions
 11. Creating Classes
@@ -17,4 +17,4 @@ Useful Python programs.
 13. Accessing Private Attributes
 14. Accessing Private Methods
 15. Modifiying Attributes
-16. Using Static Methods | Properties 
+16. Using Static Methods | Properties
