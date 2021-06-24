@@ -9,9 +9,9 @@ class Critter(object):
         self.hunger=hunger
         self.boredom=boredom
 
-    def __pass_time(self):
+    def __pass_time(self): # this part increases the value of the attributes 'hunger' and
         self.hunger+=1
-        self.boredome+=1
+        self.boredom+=1
     
     @property 
     def mood(self):
@@ -45,8 +45,51 @@ class Critter(object):
             self.boredom=0
         self._pass_time()
 
+    def main():
+        crit_name=input("What do you want to name your critter ?:")
+        crit=Critter(crit_name)
+
+crit=Critter("Oreoluwa")
+choice=None
+while choice !="0":
+    print(\
+        """
+        Critter Caretaker
+        
+        0 - Quit
+        1 - Listen to your critter 
+        2 - Feed your critter 
+        3 - Play with your critter
+        """)
+
+    choice=input("Choice: ")
+    print()
+
+    #exit
+    if choice =="0":
+        print("Good-bye")
+    
+    #listen to your critter
+    elif choice =="1":
+        crit.talk()
+    
+    #feed your critter
+    elif choice =="2":
+        crit.eat()
+
+    #play with your critter
+    elif choice =="3":
+        crit.play()
+
+    #some unknown choice
+
+    else:
+        print("\nSorry,but",choice,"isn't a valid choice")
+        break
+
+Critter.main() # remember method like this , static methods, are accessed only by the class name and not the class object.
+("\n\nPress the enter key to exit")
     
 
     
 
-    
