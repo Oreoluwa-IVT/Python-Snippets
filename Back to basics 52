@@ -1,0 +1,29 @@
+#Private Critter 
+#Demonstrates private attributes and methods
+
+class Critter(object):
+    """A virutal pet"""
+    def __init__(self,name,mood):
+        print("We have arrived")
+        self.name=name  # this is pubic attribute
+        self.__mood=mood # this is a private attribute ( the two underscores show that it's a private attribute)
+    
+    def talk(self):
+        print("\nI'm,",self.name)
+        print("\nI'm",self.__mood)
+
+    
+class __nownow(object):
+    """This is a private class"""
+    def okay(self):
+        print("I'm a private class")
+
+
+crit=Critter(name="Oreoluwa",mood="happy") 
+
+print(crit.talk())
+print(crit.name)
+#print(crit.mood) Because this is a private attribute , It cannot be accessed.
+
+
+    
