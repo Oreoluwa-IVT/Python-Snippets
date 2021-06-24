@@ -14,7 +14,7 @@ class Critter(object):
     
     def __init__(self,name):
         print("A Critter has  been born!")
-        self.name=name
+        self.name=name # this is by default , a public attribute. meaning that it can be accessed from outside the code directly. Check for private atrribuite in "Back to basics 52"
         Critter.total +=1
 
 #main
