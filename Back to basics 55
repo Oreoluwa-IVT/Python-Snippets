@@ -3,10 +3,13 @@
 
 
 class Critter(object):
-    """A virtual pet"""
-    def __init__(self,name,hunger=0,boredom=0):
-        self.name=name
+    """A virtual pet""" # this is a docstring, it tells us briefly what the class is all about
+    def __init__(self,name,hunger=0,boredom=0): #this is a constructor , it runs the first time this class is instantiated
+        self.name=name #this is a convention for attributes
         self.hunger=hunger
         self.boredom=boredom
 
+    def __pass_time(self):
+        self.hunger+=1
+        self.boredome+=1
     
