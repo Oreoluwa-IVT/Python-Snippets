@@ -8,6 +8,9 @@ class Critter(object):
     @staticmethod
     def status():
         print("\nThe Total number of critters is",Critter.total)
+
+        #notice that the status method doesn't have the self paramter. This is because
+        #the status method is only meant to be invoked through a class and not an object
     
     def __init__(self,name):
         print("A Critter has  been born!")
