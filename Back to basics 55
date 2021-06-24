@@ -31,6 +31,14 @@ class Critter(object):
         print("I'm",self.name,"and I feel",self.mood,"now\n")
         self.__pass_time()
 
+    def eat(self,food=4):
+        print("Brrupp. Thank you.")
+        self.hunger-=food
+        if self.hunger<0:
+            self.hunger=0
+        self.__pass_time()
+        
+
     
 
     
