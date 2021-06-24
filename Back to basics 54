@@ -1,0 +1,11 @@
+# Controlling Access to private attributes
+
+#Property Critter
+#Demonstrates properties 
+
+class Critter(object):
+    """A new class uhmm"""
+    def __init__(self):
+        print("Welcome to the divine access")
+    
+    @property
