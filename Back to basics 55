@@ -13,3 +13,18 @@ class Critter(object):
         self.hunger+=1
         self.boredome+=1
     
+    @property 
+    def mood(self):
+        unhappiness=self.hunger+self.boredom
+        if unhappiness <5:
+            m="happy"
+        elif 5<=unhappiness <=15:
+            m="okay"
+        elif 11<=unhappiness<=15:
+            m="fraustrated"
+        else:
+            m="mad"
+
+        return m
+
+    
