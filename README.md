@@ -1,7 +1,7 @@
 # Python-Snippets
 Useful Python programs.
 
-## See how to write in python, with examples written in the "Back to basics 1-50" files
+## See How to Write in Python, With Examples Written in The "Back to basics 1-50" Files.
 1. Conditional Statements
 2. Operators
 3. List
