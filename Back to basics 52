@@ -23,7 +23,14 @@ crit=Critter(name="Oreoluwa",mood="happy")
 
 print(crit.talk())
 print(crit.name)
-#print(crit.mood) Because this is a private attribute , It cannot be accessed.
+
+#here we tried accessing a private attribute, but I decided to introduce a try catch. So I don't generate weird errors
+try:
+    print(crit.mood)
+except:
+    print("\n\nNice Try. you can't access a private attribute")
+
+input("\n\n\n\n\nPress the Enter key to exit")
 
 
     
