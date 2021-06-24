@@ -13,11 +13,11 @@ Useful Python programs.
 - [ ] Creating | Reading | Writing txt files
 - [ ] Creating functions
 - [ ] Creating Classes
-12. Accessing Public Attributes
-13. Accessing Private Attributes
-14. Accessing Private Methods
-15. Modifiying Attributes
-16. Using Static Methods | Properties
+- [ ] Accessing Public Attributes
+- [ ] Accessing Private Attributes
+- [ ] Accessing Private Methods
+- [ ] Modifiying Attributes
+- [ ] Using Static Methods | Properties
 
 
 
