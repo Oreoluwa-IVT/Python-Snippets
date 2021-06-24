@@ -1,0 +1,5 @@
+print("Welcome to the Enter Favourite food program")
+first_food=input("What's you most favourite food")
+second_food=input("What's you second favourite food")
+input("\n\nDoes it sound like ?")
+print(first_food + second_food)
