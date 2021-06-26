@@ -3,6 +3,10 @@
 
 class Player(object):
     """A player in a shooter game"""
+
+    def __init__(self):
+        """this is a constructor"""
+        print("Hey guys, Player")
     
     def blast(self,enemy):
         print("The player blasts an enemy")
