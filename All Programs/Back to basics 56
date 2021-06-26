@@ -22,8 +22,8 @@ class Alien(object):
 
 #main
 print("\t\tDeath of an Alien \n")
-hero=Player()
-invader=Alien()
-hero.blast(invader)
+hero=Player()    #hero is the first object
+invader=Alien()   #invader is the second object
+hero.blast(invader) #the two objects send each other messages heres
 
 input("\n\nPress the enter key to exit")
