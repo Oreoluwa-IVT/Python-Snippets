@@ -10,7 +10,7 @@ class Player(object):
     
     def blast(self,enemy):
         print("The player blasts an enemy")
-        enemy.end()
+        enemy.die()
 
 class Alien(object):
     """An alien in a shooter game."""
@@ -21,3 +21,9 @@ class Alien(object):
 
 
 #main
+print("\t\tDeath of an Alien \n")
+hero=Player()
+invader=Alien()
+hero.blast(invader)
+
+input("\n\nPress the enter key to exit")
