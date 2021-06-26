@@ -21,5 +21,10 @@ class card(object):
 now=card("A","b")
 print(now.RANKS)
 print(now.SUITS)
+print(now.rank)
+print(now.suit)
 
-    
+
+#note: a class name and an object can access a classes attributes 
+#onte: only a class name can access private class attribuites
+#note:for an object to access private attributes, it has to use the class name starting with and underscore. the privaate attributes
