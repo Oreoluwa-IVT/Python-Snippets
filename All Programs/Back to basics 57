@@ -4,7 +4,7 @@
 #Playing Cards
 #Demonstrates combining objects
 
-class card(Object):
+class card(object):
     """A playing card."""
     RANKS=["A","2","3","4","4","6","7","8","9","10","J","K",]
     SUITS=["c","d","h","s"]
@@ -16,5 +16,10 @@ class card(Object):
     def __str__(self):
         rep=self.rank +self.suit
         return rep
-    
+
+
+now=card("A","b")
+print(now.RANKS)
+print(now.SUITS)
+
     
