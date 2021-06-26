@@ -25,6 +25,6 @@ print(now.rank)
 print(now.suit)
 
 
-#note: a class name and an object can access a classes attributes 
+#note: a class name and an object can access class attributes 
 #onte: only a class name can access private class attribuites
 #note:for an object to access private attributes, it has to use the class name starting with and underscore. the privaate attributes
