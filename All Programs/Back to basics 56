@@ -27,3 +27,7 @@ invader=Alien()   #invader is the second object
 hero.blast(invader) #the two objects send each other messages heres
 
 input("\n\nPress the enter key to exit")
+
+
+#Note that the relationships behing these object communicating by sending and receiving messages via calling their 
+#method is simply the beauty of OOP
