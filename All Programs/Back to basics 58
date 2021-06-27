@@ -38,7 +38,7 @@ class Hand(object):
 
 
 #main
-card1=Card(rank="A",suit="c")
+card1=Card(rank="A",suit="c")  # card1 is an object of the Card class
 print("Printing a Card object:")
 print(card1)
 
