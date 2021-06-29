@@ -58,8 +58,7 @@ print(card5)
 
 #Creating an empty hand object
 
-my_hand=Hand()
+yourhand=Hand()
 print("\nPrint my hand before I add any cards:")
-print(my_hand)
 
 my_hand.add(card1)
