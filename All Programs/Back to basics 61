@@ -1,0 +1,7 @@
+#Invoking Base Class Methods
+
+class Positionable_Card(Card):
+    """A Card that can be face up or face down"""
+    def __init__(self,rank,suit,face_up=True):
+        super(Positionable_Card,self).__init__(rank,suit)
+        self.is_face_up=face_up
