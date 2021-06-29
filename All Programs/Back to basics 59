@@ -62,7 +62,8 @@ class Deck(Hand):
             for hand in hands:
                 if self.cards:
                     top_cards=self.cards[0]
-                    self.give(top_card,hand)
+                    self.give(top_cards,hand)  #take time to under this code , it's a bit tricky but you'd get it. pay attention fo methods "give and deal". notice 
+                    #the
 
                 else:
                     print("Can't continue deal. Out of cards!")
@@ -84,3 +85,27 @@ deck1.populate()
 print("\nPopulated the deck.")
 print("Deck:")
 print(deck1)
+
+print("\nShuffle of the deck")
+print("Deck:")
+print(deck1)
+
+my_hand=Hand()
+your_hand=Hand()
+hands=[my_hand,your_hand]
+
+deck1.deal(hands,per_hand=5) # take the number of hands and the number of cards to give each hand
+
+print("\n\n\n\n\n\nHand 1",my_hand,"\n\n")
+print("Hand 2",your_hand,"\n\n")
+print("Deck 3",deck1,"\n\n")
+
+
+
+deck1.clear()
+print("\nCleared the deck")
+print(deck1)
+
+
+print("Deck:", deck1)
+input("\n\nPress the enter key to exit")
