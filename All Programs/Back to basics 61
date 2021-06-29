@@ -158,11 +158,21 @@ print(card1)
 
 
 
+
+
+
+
+
 print("\nPrinting an Unprintable_Card object:")
 print(card2)
 
 
-print("\nPrinting a Positionable_Card:")
+print("Printing the third card before flipping")
+print(card3)
+
+card3.flip()
+
+print("\nPrinting the third card after flipping")
 print(card3)
 
 
