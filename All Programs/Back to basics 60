@@ -108,3 +108,19 @@ print(deck1)
 
 print("Deck:", deck1)
 input("\n\nPress the enter key to exit")
+
+
+
+# We Practice overiding methods in a base class in this class below "Unprintable_Card"
+class Unprintable_Card(Card):
+    """A Card that won't reveal its rank or suit when printed"""
+    def __str__(self):
+        return "<unprintable>"
+
+    # notice that this method "___str___" was also defined the Card class and it is also defined here as well. 
+    # However, what happens here is , because we defined here also, it will overide the one defined in the base class
+
+
+
+now=Unprintable_Card(rank="A",suit="c")
+print(now)
