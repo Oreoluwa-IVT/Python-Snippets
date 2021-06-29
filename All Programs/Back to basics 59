@@ -16,7 +16,6 @@ class card(object):
         return rep
     
 
-
 class Hand(object):
     """ A hand of playing cards"""
     def __init__(self):
@@ -47,10 +46,10 @@ class Hand(object):
     # we are about to create a new class called Deck. Deck will be a derived
     #  class simply because it's going to inherit of all Hands methods and attributes
 
-
 class Deck(Hand):
     """A deck of playing cards"""
-    def populate(self):
+    def populate(self): # notice that there isn't any constructor method present in Deck simply
+                                    # because already inherits the constructor from the Hand class
         for suit in Card.SUITS:
             for rank in Cards.RANKS: # remember that class names are used to access class attributes
                  self.add(Card(rank,suit))
@@ -69,3 +68,11 @@ class Deck(Hand):
                 else:
                     print("Can't continue deal. Out of cards!")
                     
+
+
+
+#main 
+deck1= Deck()
+print("Created a new deck")
+print("Deck:")
+print(deck1)
