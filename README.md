@@ -1,5 +1,5 @@
 # Python-Snippets
-Useful Python programs. 
+Useful Python Programs,from my time learning Python. 
 
 ## See How to Write in Python, With Examples Written in The "Back to basics 1-70" Files.
 - [ ] Conditional Statements
