@@ -42,3 +42,30 @@ class Hand(object):
         self.cards.remove(card)
         other_hand.add(card)
                 
+    
+
+    # we are about to create a new class called Deck. Deck will be a derived
+    #  class simply because it's going to inherit of all Hands methods and attributes
+
+
+class Deck(Hand):
+    """A deck of playing cards"""
+    def populate(self):
+        for suit in Card.SUITS:
+            for rank in Cards.RANKS:
+                 self.add(Card(rank,suit))
+        
+    def shuffle(self):
+        import random
+        random.shuffle(self.cards)
+
+    def deal(self,hands,per_hand=1):
+        for rounds in range(per_hand):
+            for hand in hands:
+                if self.cards:
+                    top_cards=self.cards[0]
+                    self.give(top_card,hand)
+
+                else:
+                    print("Can't continue deal. Out of cards!")
+                    
