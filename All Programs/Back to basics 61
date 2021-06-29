@@ -121,7 +121,9 @@ class Unprintable_Card(Card):
     # notice that this method "___str___" was also defined the Card class and it is also defined here as well. 
     # However, what happens here is , because we defined here also, it will overide the one defined in the base class
 
+#Note: Fun Fact: Base class is also known as a super class
 
+# Note:so you can say "Card" is a super class of the Positional_Card , Unprintable_Card class
 
 now=Unprintable_Card(rank="A",suit="c")
 print(now)
@@ -129,5 +131,14 @@ print(now)
 class Positionable_Card(Card):
     """A Card that can be face up or face down"""
     def __init__(self,rank,suit,face_up=True):
-        super(Positionable_Card,self).__init__(rank,suit)
-        self.is_face_up=face_up
+        super(Positionable_Card,self).__init__(rank,suit) #The first argument of super, "Postional_Card", tell python that you want to invoke the method of the base class to it.
+        #the second argument "self", is simply a reference to the newly instantiatd Positionalbe_Card object so that all the code in the Card can get at the object to add the rank and suit attributes to it.
+        #__init__ simply tells python that this is the method you want to invoke.
+        self.is_face_up=face_up 
+
+    def __str__(self):
+        if self.is_face_up:
+            rep=super(Postionable_Card,self).__str__()
+        else:
+            rep="XX"
+        return rep
