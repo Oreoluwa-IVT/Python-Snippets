@@ -136,7 +136,7 @@ class Positionable_Card(Card):
         #__init__ simply tells python that this is the method you want to invoke.
         self.is_face_up=face_up 
 
-    def __str__(self):
+    def __str__(self): 
         if self.is_face_up:
             rep=super(Positionable_Card,self).__str__()
             #this part simply returns the __str__ method from the base class
@@ -174,5 +174,4 @@ card3.flip()
 
 print("\nPrinting the third card after flipping")
 print(card3)
-
 
