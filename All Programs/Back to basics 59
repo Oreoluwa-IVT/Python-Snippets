@@ -3,7 +3,7 @@
 #Then lastly, we create one mself class that inherits the attributes and methods of the other classe
 
 
-class card(object):
+class Card(object):
     RANKS=["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
     SUITS=["c","d","h","s"]
 
@@ -48,10 +48,9 @@ class Hand(object):
 
 class Deck(Hand):
     """A deck of playing cards"""
-    def populate(self): # notice that there isn't any constructor method present in Deck simply
-                                    # because already inherits the constructor from the Hand class
+    def populate(self): # notice that there isn't any constructor method present in Deck simply  because already inherits the constructor from the Hand class           
         for suit in Card.SUITS:
-            for rank in Cards.RANKS: # remember that class names are used to access class attributes
+            for rank in Card.RANKS: # remember that class names are used to access class attributes
                  self.add(Card(rank,suit))
         
     def shuffle(self):
@@ -74,5 +73,14 @@ class Deck(Hand):
 #main 
 deck1= Deck()
 print("Created a new deck")
+print("Deck:")
+print(deck1)
+
+
+#since the deck is empty, we are going to populate the deck with the created populate method
+
+
+deck1.populate()
+print("\nPopulated the deck.")
 print("Deck:")
 print(deck1)
