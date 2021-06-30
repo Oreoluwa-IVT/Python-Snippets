@@ -1,2 +1,12 @@
 #GUIs in Python
 # GUI is event driven
+#event handler is a code that runs when and event occurs
+
+#The event loop is simply a term that refers to a part of the program 
+#that loop untill and event occurs.
+
+
+#Note: Root Windows are the foundation of your GUI program
+
+#Simple GUI
+#Demonstrates creating a window
