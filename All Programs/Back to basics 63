@@ -4,25 +4,16 @@
 
 #The event loop is simply a term that refers to a part of the program 
 #that loop untill and event occurs.
-
-
 #Note: Root Windows are the foundation of your GUI program
-
 #Simple GUI
 #Demonstrates creating a window
-
-print("Welcome to my World")
-
-
 from tkinter import *
 
 #to create a root window
 #use an object from the Tk() class
 
-root =Tk()
-
+root =Tk() # Tk() is a class in the tkinter module. notice that you didn't have to type tkinter.Tk() for it to work. tkinter comdule works like that
 #modify the window
-root.title("Calculator")
-root.geometry("800x800")
+root.title("Calculator GUI by you")
+root.geometry("400x600")
 
-#run this program by clicking the icon on your desktop
