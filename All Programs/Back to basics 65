@@ -1,0 +1,5 @@
+#Using Buttons
+from tkinter import *
+
+okay=Tk()
+okay.title("Buttons Pusher")
