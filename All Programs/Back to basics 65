@@ -3,3 +3,14 @@ from tkinter import *
 
 okay=Tk()
 okay.title("Buttons Pusher")
+okay.geometry("400x300")
+now=Frame(okay) # the frame works by placing the object of the class of the moudle tkinter in the class
+now.grid()
+lbl=Label(now,text="Push the Buttons and see what happens".upper())
+lbl.grid() #remember every widget needs to use the grid method
+
+but=Button(okay,text="1")
+but.grid()
+
+
+okay.mainloop()
