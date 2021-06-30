@@ -1,0 +1,7 @@
+from tkinter import *
+mygui=Tk()
+
+mygui.title("About Me")
+mygui.geometry("400x200")
+
+mygui.mainloop()#this part of the program create an event loop. it stay open waiting to handle events
