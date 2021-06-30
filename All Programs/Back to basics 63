@@ -22,7 +22,7 @@ from tkinter import *
 root =Tk()
 
 #modify the window
-root.title("Calculator GUI by you")
+root.title("Calculator")
 root.geometry("800x800")
 
 #run this program by clicking the icon on your desktop
