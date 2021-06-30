@@ -9,8 +9,12 @@ now.grid()
 lbl=Label(now,text="Push the Buttons and see what happens".upper())
 lbl.grid() #remember every widget needs to use the grid method
 
-but=Button(okay,text="1")
+but=Button(now,text="1")
 but.grid()
+
+but2=Button(now)
+but2.grid()
+but2.configure(text="34") # this allows you modify the value of a widget after it has been created
 
 
 okay.mainloop()
