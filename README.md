@@ -18,7 +18,9 @@ Useful Python Programs,from my time learning Python.
 - [ ] Accessing Private Methods
 - [ ] Modifiying Attributes
 - [ ] Using Static Methods | Properties
-
+- [ ] Inheritance
+- [ ] Polymorphism
+- [ ] Creating Your Own Modules in Python
 
 
 
