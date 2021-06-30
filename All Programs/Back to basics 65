@@ -1,6 +1,7 @@
 #Using Buttons
 from tkinter import *
 
+
 okay=Tk()
 okay.title("Buttons Pusher")
 okay.geometry("400x300")
@@ -16,5 +17,8 @@ but2=Button(now)
 but2.grid()
 but2.configure(text="34") # this allows you modify the value of a widget after it has been created
 
+but3=Button(okay) # this meand button will be created in "okay"
+but3.grid()
+but3["text"]="443"
 
 okay.mainloop()
