@@ -15,7 +15,7 @@ from tkinter import *
 root =Tk() # Tk() is a class in the tkinter module. notice that you didn't have to type tkinter.Tk() for it to work. tkinter comdule works like that
 #modify the window
 root.title("Basic Calculator") # this sets the title of the window 
-root.geometry("400x600") #this sets the size of a root window
+root.geometry("1000x600") #this sets the size of a root window
 
 
 #Note: GUI elements are called widgets
