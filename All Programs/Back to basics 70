@@ -3,9 +3,9 @@
 
 class Application(Frame):
     """GUI with radio button"""
-    def __init__(self):
+    def __init__(self,master):
         """this is the constructor"""
-        super(Application,self).__init__(self)
+        super(Application,self).__init__(self,master)
         self.grid()
         self.create_widget()
 
