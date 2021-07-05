@@ -23,19 +23,19 @@ class Application(Frame):
         # note that the row span attribute, simply increases the row based on the intergrer you give it
         # create entry widget to accept password
 
-        self.pw_ent=Entry(self)  # this is how to create a widget
+        self.pw_ent=Entry(self)  # this is how to create a text entry widget
         self.pw_ent.grid(row=2,column=1,sticky=W)
 
         #create submit button
         self.submit_bttn=Button(self,text="Submit",command=self.reveal) # remember that Button takes the self reference ,text and can also take "command"
         self.submit_bttn.grid(row=3,column=3)
-        self.secret_txt=Text(self,width=35 , height =5, wrap = WORD)
+        self.secret_txt=Text(self,width=35 , height =5, wrap = WORD) # this is to create the text display widget
         self.secret_txt.grid(row=3,column=0,columnspan=2,sticky=W)
         # reveal is simply a method that binds the  Submit button
     
     def reveal(self):
         """Display message based on password."""
-        contents=self.pw_ent.get()
+        contents=self.pw_ent.get()# in this part of the code , we simply used the "get()" method to pull the text for Entry "which is a text widget", then assign it to contents
         if contents =="secret":
             message="Here's the secret to living to 100: Live to 99 and then be very careful"
         
