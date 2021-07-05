@@ -81,7 +81,7 @@ class Application(Frame):
             if self.is_itchy.get():
                 adjectives +="itchy."
 
-            if self.is_joyous.get():
+            if self.is_joyous.get():s
                 adjectives+="joyous"
             
             if self.is_electric.get():
@@ -90,6 +90,6 @@ class Application(Frame):
             body_part=self.body_part.get()
 
 
-            
+
 
 
