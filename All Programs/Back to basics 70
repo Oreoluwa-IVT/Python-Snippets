@@ -11,4 +11,6 @@ class Application(Frame):
 
     
     def create_widgets(self):
-        self.okay
+        """Create the first label"""
+        Lable(self,text="Choose your favourite cheese").grid(row=0,column=0,sticky=W)
+        Label(self,text="Select One").grid(row=1,column=0,sticky=W)
