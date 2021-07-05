@@ -43,21 +43,21 @@ class Application(Frame):
         
         likes=""
 
-        if self.likes_comedy.get()
-        likes+="you Like comedic movies \n"
+        if self.likes_comedy.get():
+            likes+="you Like comedic movies \n"
 
-        if self.likes_drama.get()
-        likes+="you like dramatic movies. \n"
+        if self.likes_drama.get():
+            likes+="you like dramatic movies. \n"
 
-        if self.likes_romance.get()
-        likes+="you like romantic movies."
+        if self.likes_romance.get():
+            likes+="you like romantic movies."
 
         self.results_txt.delete(0.0,END)
-        self.results_txt.insert(o.0,likes)
+        self.results_txt.insert(0.0,likes)
 
 #main program
 root=Tk()
-root=title("Series Selector")
+root.title("Series Selector")
 root.geometry("300x200")
 app=Application(root)
 root.mainloop()
