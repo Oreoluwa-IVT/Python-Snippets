@@ -55,6 +55,12 @@ class Application(Frame):
         self.results_txt.delete(0.0,END)
         self.results_txt.insert(o.0,likes)
 
+#main program
+root=Tk()
+root=title("Series Selector")
+root.geometry("300x200")
+app=Application(root)
+root.mainloop()
 
 
 
