@@ -1,0 +1,14 @@
+#using radio button 
+#unlike checkboxes, radio button allow you to make one selection at a time
+
+class Application(Frame):
+    """GUI with radio button"""
+    def __init__(self):
+        """this is the constructor"""
+        super(Application,self).__init__(self)
+        self.grid()
+        self.create_widget()
+
+    
+    def create_widgets(self):
+        self.okay
