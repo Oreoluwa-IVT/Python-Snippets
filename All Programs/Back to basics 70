@@ -28,3 +28,9 @@ class Application(Frame):
 
         # the variable option defines the special variable associated with the radio button  "self.favourite"
         # the value option defines the value that should be stored by the special variable when the radio button is selected
+        # this simply means, once the radio button is selected, StringVar referenced by self.favourite will store the string "comedy"
+
+        Radiobutton(self,text="Drama",variable=self.favourite,value="drama",command=self.update_text).grid(row=3,column=0,sticky=W)
+        Radiobutton(self,text="Romance",variable=self.favourite,value="romance",command=self.update_text).grid(row=4,column=0,sticky=W)
+
+        
