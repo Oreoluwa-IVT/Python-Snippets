@@ -61,3 +61,12 @@ class Application(Frame):
         for part in body_parts:
             Radiobutton(self,text=part,vairable=self.body_part,value=part).grid(row=5,column=column,sticky=W)
             column+=1
+
+        #create a submit button
+        Button(self,text="Click for story",command=self.tell_story).grid(row=6,column=0,sticky=W)
+
+        self.story_txt = Text(self,width=76,height=10,wrap=WORD)
+        self.story_txt.grid(row=7,column=0,columnspan=4)
+
+
+        
