@@ -16,3 +16,13 @@ class Application(Frame):
 
         Label(self,text="Select your Favourite Series").grid(row=0,column=0,sticky=W)
         Label(self,text="Select all that apply").grid(row=1,column=0,sticky=W)
+
+
+        #note, when creating butttons , you must first instantiate a BoolenaVar object
+        #BooleanVar simply means something beign true or false.
+
+        self.likes_comedy=BooleanVar()
+
+        Checkbutton(self,text="Comedy",variable=self.likes_comedy,command=self.update_text).grid(row=2,column=0,sticky=W)
+        #the command simply allows bind the self.update_text method to it . When the user clicks , update_text() method is invoked
+        #variable simply helps associate the nature of the checkbutton to be like a Boolean (True of False)
