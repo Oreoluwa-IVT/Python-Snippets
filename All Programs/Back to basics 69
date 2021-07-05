@@ -1,1 +1,18 @@
 #Using Radio button in Python
+from tkinter import *
+
+class Application(Frame):
+    """GUI Application for favourite movie types."""
+
+    def __init__(self,master):
+        super(Application,self).__init__(master)
+        self.create_widget()
+        self.grid()
+
+    def create_widget(self):
+        """Create widgets for movie type choices"""
+
+        #Create dscription label
+
+        Label(self,text="Select your Favourite Series").grid(row=0,column=0,sticky=W)
+        Label(self,text="Select all that apply").grid(row=1,column=0,sticky=W)
