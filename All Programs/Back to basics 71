@@ -12,7 +12,7 @@ class Application(Frame):
         self.grid()
         self.create_widget()
 
-    def create_widgets(self):
+    def create_widget(self):
         """Create widgets to get story information and to display story"""
         #Create instruction label
 
@@ -41,12 +41,12 @@ class Application(Frame):
 
         #create itchy check button
         self.is_itchy=BooleanVar()
-        Checkbutton(self.text="itchy",variable=self.is_itchy).grid(row=4,column=2,sticky=W)
+        Checkbutton(self,text="itchy",variable=self.is_itchy).grid(row=4,column=2,sticky=W)
 
 
         #Create electric check button
         self.is_electric=BooleanVar()
-        Checkbutton(self,text="electric",variable=self.is_eletric).grid(row=4,column=3,sticky=W)
+        Checkbutton(self,text="electric",variable=self.is_electric).grid(row=4,column=3,sticky=W)
 
         #Create a label for body parts radio buttons
         Label(self,text="Body Part:").grid(row=5,column=0,sticky=W)
@@ -81,7 +81,7 @@ class Application(Frame):
             if self.is_itchy.get():
                 adjectives +="itchy."
 
-            if self.is_joyous.get():s
+            if self.is_joyous.get():
                 adjectives+="joyous"
             
             if self.is_electric.get():
@@ -89,7 +89,46 @@ class Application(Frame):
 
             body_part=self.body_part.get()
 
+        story+="The Famous Explorer"
+        story+=person
+        story+="had nearly given up a life long quest to find The Lost City of"
+        story+=noun.title()
+        story+="When one day, the"
+        story+=noun
+        story+="found"
+        story+=person + ","
+        story+="A Strong"
+        story+=adjectives
+        story+="Peculiar feeling overwhelmed the explorer."
+        story+="After all this time, the quest was finally over, A tear came to"
+        story+=person +"'s"
+        story+=body_part +","
+        story+="And then, the"
+        story+=noun
+        story+="promptly devoured"
+        story+=person +","
+        story+="The moral of the story ? Be careful what you"
+        story+=verb
+        story+=" for,"
+
+        #display the story
+        self.story_txt.delete(0.0,END)
+        self.story_txt.insert(0.0,story)
+
+        
+
+#main
+root=Tk()
+root.title("New GUI")
+app=Application(root)
+root.mainloop()
 
 
 
 
+
+
+
+
+
+#Oluwafemi Oreoluwa
