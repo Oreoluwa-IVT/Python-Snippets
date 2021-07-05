@@ -1,17 +1,18 @@
 #Working with Text, entry and grid layout manager widgets
 #Longevity 
 
-from tkinter from *
+from tkinter import  *
 
 class Application(Frame):
     """GUI application which can reveal"""
     def __init__(self,master):
         super(Application,self).__init__(master)
         self.grid()
-        self.create_widgets()
+        self.create_widget()
 
     def create_widget(self):
         """Create button , text , and entry widgets."""
+
         #Create instructions Label
         self.inst_lbl= Label(self,text="Enter Password for the secrt of longevity")
         self.inst_lbl.grid(row=0,column=0,columnspan=2,sticky=W)
@@ -27,6 +28,9 @@ class Application(Frame):
 
         #create submit button
         self.submit_bttn=Button(self,text="Submit",command=self.reveal) # remember that Button takes the self reference ,text and can also take "command"
+        self.submit_bttn.grid(row=3,column=3)
+        self.secret_txt=Text(self,width=35 , height =5, wrap = WORD)
+        self.secret_txt.grid(row=3,column=0,columnspan=2,sticky=W)
         # reveal is simply a method that binds the  Submit button
     
     def reveal(self):
@@ -38,9 +42,17 @@ class Application(Frame):
         else:
             message="That's not the correct password, so I can't share the secret with you"
 
-        self.secret_txt.delete(0,0,END)
+        self.secret_txt.delete(0.0,END)
         # note , the delete method take in a begining column and an end column to delete
         self.secret_txt.insert(0.0,message)
+        #this insert method, can insert a string into a text widget+
 
-        
 
+#main
+root=Tk()
+root.title("The Secret to Life")
+root.geometry("400x300")
+
+app=Application(root)
+
+root.mainloop()
