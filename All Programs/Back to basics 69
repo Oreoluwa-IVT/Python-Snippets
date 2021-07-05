@@ -35,5 +35,27 @@ class Application(Frame):
         self.likes_romance=BooleanVar()
         Checkbutton(self,text="Romance",variable=self.likes_romance,command=self.update_text).grid(row=4,column=0,sticky=W)
 
+        self.results_txt=Text(self,width=40,height=5,wrap=WORD)
+        self.results_txt.grid(row=5,column=0, columnspan=3)
+    
+    def update_text(self):
+        """Update text widget and display user's favorite movie types."""
         
+        likes=""
+
+        if self.likes_comedy.get()
+        likes+="you Like comedic movies \n"
+
+        if self.likes_drama.get()
+        likes+="you like dramatic movies. \n"
+
+        if self.likes_romance.get()
+        likes+="you like romantic movies."
+
+        self.results_txt.delete(0.0,END)
+        self.results_txt.insert(o.0,likes)
+
+
+
+
 
