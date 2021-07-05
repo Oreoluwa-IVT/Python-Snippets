@@ -26,3 +26,4 @@ class Application(Frame):
         Checkbutton(self,text="Comedy",variable=self.likes_comedy,command=self.update_text).grid(row=2,column=0,sticky=W)
         #the command simply allows bind the self.update_text method to it . When the user clicks , update_text() method is invoked
         #variable simply helps associate the nature of the checkbutton to be like a Boolean (True of False)
+        #variable helps us take not of the status of the button. that's also why "Checkbuttonn" is not assigned to variable s
