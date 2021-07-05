@@ -14,3 +14,17 @@ class Application(Frame):
         """Create the first label"""
         Lable(self,text="Choose your favourite cheese").grid(row=0,column=0,sticky=W)
         Label(self,text="Select One").grid(row=1,column=0,sticky=W)
+
+        # because these are radio button,there are special objects that tells us if a radio buttion is checked 
+        # this objects have to be objects of the StringVar class from the tkinter module.
+
+        # note: we set the initial value of the radio button to None
+
+
+        self.favourite=StringVar()
+        self.favourite.set(None)
+
+        Radiobutton(self,text="Comedy",variable=self.favorite,value="comedy.",command=self.update_text).grid(row=2,column=0,sticky=W)
+
+        # the variable option defines the special variable associated with the radio button  "self.favourite"
+        # the value option defines the value that should be stored by the special variable when the radio button is selected
