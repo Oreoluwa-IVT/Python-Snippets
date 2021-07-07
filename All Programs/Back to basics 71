@@ -56,10 +56,10 @@ class Application(Frame):
         self.body_part.set(None)
 
         #Create body part radio buttons
-        body_parts=["bellybutton","big toe","medulla oblongata"]
+        body_part=["bellybutton","big toe","medulla oblongata"]
         column=1
-        for part in body_parts:
-            Radiobutton(self,text=part,vairable=self.body_part,value=part).grid(row=5,column=column,sticky=W)
+        for part in body_part:
+            Radiobutton(self,text=part,variable=self.body_part,value=part).grid(row=5,column=column,sticky=W)
             column+=1
 
         #create a submit button
@@ -107,7 +107,7 @@ class Application(Frame):
         story+=noun
         story+="promptly devoured"
         story+=person +","
-        story+="The moral of the story ? Be careful what you"
+        story+="The moral of the story ? Be careful  what you"
         story+=verb
         story+=" for,"
 
