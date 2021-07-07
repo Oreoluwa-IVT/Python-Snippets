@@ -64,6 +64,7 @@ class Application(Frame):
 
         #create a submit button
         Button(self,text="Click for story",command=self.tell_story).grid(row=6,column=0,sticky=W)
+        # ever button should have something its going to do , this si the command section
 
         self.story_txt = Text(self,width=76,height=10,wrap=WORD)
         self.story_txt.grid(row=7,column=0,columnspan=4)
