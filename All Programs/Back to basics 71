@@ -69,25 +69,25 @@ class Application(Frame):
         self.story_txt.grid(row=7,column=0,columnspan=4)
 
 
-        def tell_story(self):
-            """Fill textbox box with new story based onuse input."""
+    def tell_story(self):
+        """Fill textbox box with new story based onuse input."""
 
-            #get values from the GUI
-            person=self.person_ent.get()
-            noun=self.noun_ent.get()
-            verb=self.verb_ent.get()
+        #get values from the GUI
+        person=self.person_ent.get()
+        noun=self.noun_ent.get()
+        verb=self.verb_ent.get()
 
-            adjectvies=""
-            if self.is_itchy.get():
-                adjectives +="itchy."
+        adjectives=""
+        if self.is_itchy.get():
+            adjectives +="itchy."
 
-            if self.is_joyous.get():
-                adjectives+="joyous"
+        if self.is_joyous.get():
+            adjectives +="joyous"
             
-            if self.is_electric.get():
-                adjectives+="electric."
+        if self.is_electric.get():
+            adjectives+="electric."
 
-            body_part=self.body_part.get()
+        body_part=self.body_part.get()
 
         story+="The Famous Explorer"
         story+=person
