@@ -1,4 +1,4 @@
-# the fortune Cookie Program
+# Using Conditionals Statments 
 print("You are welcome to the fortune cookie program,"\
     "select between 1 and 5 to see your fortune from the cookie")
 
