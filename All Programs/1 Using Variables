@@ -1,0 +1,11 @@
+#Say Hi
+#Demonstrates the Use of a variable 
+
+name="Oreoluwa"
+
+print(name) #this line prints "name" recall "name" is a variable , which was assigned to the string "Oreoluwa"
+
+print("Hi",name) # this line does what the previously statement did, but with and extra Argument "Hi"
+input("\n\nPress the enter key to exit. ore") #this line waits for user input, this simply acts as a pause 
+#to prevent the program from closing immediately after executing earlier statements
+
