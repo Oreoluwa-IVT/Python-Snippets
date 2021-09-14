@@ -12,7 +12,7 @@ class Critter(object):
 
 
 #main
-crit=Critter() // # this is called instantiation
+crit=Critter()  # this is called instantiation
 now=Critter()
 crit.talk()
 crit.okay()
